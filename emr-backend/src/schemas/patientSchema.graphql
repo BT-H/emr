@@ -1,0 +1,11 @@
+type Patient {
+id: ID!
+name: String!
+dob: String!
+gender: String!
+}
+
+type Query {
+patients: [Patient!]!
+patient(id:ID!): Patient
+}
